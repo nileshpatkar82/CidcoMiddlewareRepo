@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Features\RequestSentToSAP\**" />
+    <EmbeddedResource Remove="Features\RequestSentToSAP\**" />
+    <None Remove="Features\RequestSentToSAP\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Contracts\Infrastructure\IRequestFromAapleSarkar.cs" />
+    <Compile Remove="Features\RequestFromAapleSarkar\RequestFromAapleSarkarService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.4.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cidco.Middleware.Domain\Cidco.Middleware.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Request\" />
+  </ItemGroup>
+
+</Project>

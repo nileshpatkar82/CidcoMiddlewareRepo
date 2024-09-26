@@ -1,0 +1,11 @@
+# Ignore solution files
+*.sln
+
+# Ignore local files
+local/
+
+*.vsidx
+
+*.vs
+
+*.vsidx

@@ -1,0 +1,6 @@
+@Cidco.Middleware.API_HostAddress = http://localhost:5157
+
+GET {{Cidco.Middleware.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
